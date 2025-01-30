@@ -34,7 +34,7 @@ variable "cidr_blocks" {
     default = ["0.0.0.0/0"]
 }
 
-variable "sg_tags {
+variable "sg_tags" {
   type        = map
   default     = {
     Name : expense-dev-backend
