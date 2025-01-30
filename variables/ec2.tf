@@ -14,6 +14,7 @@ resource "aws_security_group" "allow_tls" {
         to_port = var.to_port
         protocol = "tcp"
         cidr_blocks = var.cidr_blocks
+    }
 
     egress {
         from_port = 0
@@ -22,5 +23,5 @@ resource "aws_security_group" "allow_tls" {
         cidr_blocks = ["0.0.0.0/0"]
     }
     tags = var.sg_tags
-    }
+    
 }
